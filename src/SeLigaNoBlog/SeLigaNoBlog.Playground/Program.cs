@@ -33,19 +33,11 @@ namespace SeLigaNoBlog.Playground
              * 
              */
 
-            var usuario = new Usuario();
-            usuario.Nome = "Andre G. Calmon";
-            usuario.Email = "gcalmon@gmail.com";
+            var servico = new ServicoRecomendacao();
 
-            IBlog blog = new BlogKentBack();
-            
-            var artigo = blog.ObterArtigo();
+            servico.Executar();
 
-            var servicoEmail = new Gmail();
-
-            servicoEmail.EnviarEmail(usuario, artigo);
-
-           Console.ReadLine();
+            Console.ReadLine();
 
         }
     }

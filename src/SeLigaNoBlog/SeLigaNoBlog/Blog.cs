@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TNX.RssReader;
 
-namespace SeLigaNoBlog.Playground
+namespace SeLigaNoBlog
 {
-    abstract class Blog : IBlog
+    public abstract class Blog : IBlog
     {
         public string Url { get; set; }
 

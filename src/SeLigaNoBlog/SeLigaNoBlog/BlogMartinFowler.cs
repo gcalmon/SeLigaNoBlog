@@ -2,9 +2,9 @@
 using System.Linq;
 using TNX.RssReader;
 
-namespace SeLigaNoBlog.Playground
+namespace SeLigaNoBlog
 {
-    class BlogMartinFowler : Blog
+    public class BlogMartinFowler : Blog
     {
         public BlogMartinFowler()
             : base("http://martinfowler.com/feed.atom")

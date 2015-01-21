@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeLigaNoBlog.Playground
+namespace SeLigaNoBlog
 {
-    class Artigo
+    public class Artigo
     {
         public string Titulo { get; set; }
 

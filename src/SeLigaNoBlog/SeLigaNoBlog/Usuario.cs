@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeLigaNoBlog.Playground
+namespace SeLigaNoBlog
 {
-    interface IBlog
+    public class Usuario
     {
-        Artigo ObterArtigo();
+        public string Nome { get; set; }
+        public string Email { get; set; }
     }
 }

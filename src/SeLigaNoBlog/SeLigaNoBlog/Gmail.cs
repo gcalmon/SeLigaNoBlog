@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Net.Mail;
 
-namespace SeLigaNoBlog.Playground
+namespace SeLigaNoBlog
 {
-    class Gmail
+    public class Gmail
     {
         public void EnviarEmail(Usuario usuario, Artigo artigo)
         {
