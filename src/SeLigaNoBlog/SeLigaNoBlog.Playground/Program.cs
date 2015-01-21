@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 
 namespace SeLigaNoBlog.Playground
 {
@@ -33,6 +34,7 @@ namespace SeLigaNoBlog.Playground
              * 
              */
 
+            
             var servico = new ServicoRecomendacao();
 
             servico.Executar();
