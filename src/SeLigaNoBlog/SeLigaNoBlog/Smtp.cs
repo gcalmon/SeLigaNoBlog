@@ -9,15 +9,9 @@ namespace SeLigaNoBlog
 {
     public class Smtp
     {
-        public string Servidor { get; set; }
-        
-        public int Porta { get; set; }
-
         public string Login { get; set; }
 
         public string Senha { get; set; }
-
-        public string Email { get; set; }
 
         public string Nome { get; set; }
 
@@ -25,11 +19,8 @@ namespace SeLigaNoBlog
         {
             return new Smtp()
             {
-                Servidor = ConfigurationManager.AppSettings["servidorSmtp"],
-                Porta = int.Parse(ConfigurationManager.AppSettings["portaSmtp"]),
                 Login = ConfigurationManager.AppSettings["loginSmtp"],
                 Senha = ConfigurationManager.AppSettings["senhaSmtp"],
-                Email = ConfigurationManager.AppSettings["emailSmtp"],
                 Nome = ConfigurationManager.AppSettings["nomeSmtp"],
             };
         }

@@ -54,6 +54,7 @@
     <Compile Include="BlogMartinFowler.cs" />
     <Compile Include="Gmail.cs" />
     <Compile Include="IBlog.cs" />
+    <Compile Include="MensagemEmail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicoRecomendacao.cs" />
     <Compile Include="Smtp.cs" />
