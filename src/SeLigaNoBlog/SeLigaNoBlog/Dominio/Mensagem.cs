@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SeLigaNoBlog
 {
-    public class MensagemEmail
+    public class Mensagem
     {
         public Usuario Usuario { get; protected set; }
 
         public Artigo Artigo { get; protected set; }
 
-        public MensagemEmail(Usuario usuario, Artigo artigo)
+        public Mensagem(Usuario usuario, Artigo artigo)
         {
             this.Usuario = usuario;
             this.Artigo = artigo;
