@@ -7,26 +7,25 @@ using TNX.RssReader;
 
 namespace SeLigaNoBlog
 {
-    public abstract class Blog : IBlog
+    public class Feed : IArtigos
     {
-        public string Url { get; set; }
+        public FonteArtigos Fonte { get; set; }
 
-        protected Blog(string url)
+        public Feed(FonteArtigos fonte)
         {
-            Url = url;
+            Fonte = fonte;
         }
 
-        public abstract bool EhArtigo(Artigo artigo);
-        
+                
         public Artigo ObterArtigo()
         {
             // Obtendo os posts do blog
-            var feed = RssHelper.ReadFeed(Url);
+            var feed = RssHelper.ReadFeed(this.Fonte.Url);
 
             //Selecionando um artigo
             var articles = feed.Items
                                      .Select(i => new Artigo(i.Title, i.Link))
-                                     .Where(EhArtigo);
+                                     .Where(a => a.Url.Contains(this.Fonte.TermoFiltragem));
 
             // Obtendo artigo aleatório
             var random = new Random();

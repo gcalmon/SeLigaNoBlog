@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SeLigaNoBlog
 {
-    public interface IBlog
+    interface IServicoweb
     {
-        Artigo ObterArtigo();
+        void Enviar(Mensagem mensagem);
     }
 }
