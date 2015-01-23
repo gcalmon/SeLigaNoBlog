@@ -6,3 +6,11 @@ src/SeLigaNoBlog/SeLigaNoBlog.wpf/obj/
 src/SeLigaNoBlog/SeLigaNoBlog/obj/
 src/SeLigaNoBlog/SeLigaNoBlog/bin/
 src/SeLigaNoBlog/SeLigaNoBlog.Test/bin/
+src/SeLigaNoBlog/SeLigaNoBlog.Test/obj/
+src/CalculeMinhaConta/CalculeMinhaConta.Tests/obj/
+
+src/CalculeMinhaConta/CalculeMinhaConta/obj/
+
+src/CalculeMinhaConta/CalculeMinhaConta.Playground/obj/
+
+src/CalculeMinhaConta/TestResults/
